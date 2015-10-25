@@ -43,7 +43,7 @@
 <h3>Jigsaw Coding</h3>
 
 <p>
-<input class="button" type="button" value="Show participants!" id="showParticipants" 
+<input class="button" type="button" value="Ver participantes" id="showParticipants" 
     style="visibility:hidden;"
     onClick="showParticipants()"/>
 </p>
@@ -56,7 +56,7 @@
 function showParticipants() {
   var participants = gapi.hangout.getParticipants();
 
-  var retVal = '<p>Participants: </p><ul>';
+  var retVal = '<p>Participantes: </p><ul>';
 
   for (var index in participants) {
     var participant = participants[index];
